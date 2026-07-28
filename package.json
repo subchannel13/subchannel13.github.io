@@ -1,0 +1,17 @@
+{
+  "name": "subchannel13.github.io",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "browser-sync start --server --files \"index.html, dist/style.css\"",
+    "build": "postcss src/style.css -o dist/style.css",
+    "watch": "postcss src/style.css -o dist/style.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "browser-sync": "^3.0.3",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.0.0"
+  }
+}
