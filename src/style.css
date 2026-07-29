@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+.heading-section {
+  @apply text-2xl font-bold mt-8 mb-4 border-b border-gray-300 pb-2;
+}
+.cell {
+  @apply py-2 border border-gray-300 px-2;
+}
+.header-cell {
+  @apply text-left font-semibold py-2 border border-gray-300 px-2;
+}
+
+.todo-amber {
+  @apply border-l-4 px-4 py-3 rounded-r;
+  border-color: var(--color-amber-400);
+  background-color: var(--color-amber-50);
+  color: var(--color-amber-800);
+}
+
+@media (prefers-color-scheme: dark) {
+  .heading-section {
+    border-color: var(--color-gray-600);
+  }
+  .cell {
+    border-color: var(--color-gray-600);
+  }
+  .header-cell {
+    border-color: var(--color-gray-600);
+  }
+  .todo-amber {
+    border-color: var(--color-amber-600);
+    background-color: var(--color-amber-950);
+    color: var(--color-amber-200);
+  }
+}
